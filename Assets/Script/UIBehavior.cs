@@ -61,10 +61,10 @@ namespace Script
         private void SetUI()
         {
             _selectedGameObjectPosition = _selectedGameObjet.transform.position;
-            transformInputField[0].text = _selectedGameObjectPosition.x.ToString();
-            transformInputField[1].text = _selectedGameObjectPosition.y.ToString();
-            transformInputField[2].text = _selectedGameObjectPosition.z.ToString();
-            rotationSpeedInputField.text = audioSourceBehaviour.RotationSpeed.ToString();
+            transformInputField[0].text = _selectedGameObjectPosition.x.ToString("n2");
+            transformInputField[1].text = _selectedGameObjectPosition.y.ToString("n2");
+            transformInputField[2].text = _selectedGameObjectPosition.z.ToString("n2");
+            rotationSpeedInputField.text = audioSourceBehaviour.RotationSpeed.ToString("n2");
         }
 
         public void HandleXValueChanged(string value)
